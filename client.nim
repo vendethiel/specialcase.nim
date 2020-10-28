@@ -41,10 +41,10 @@ template checkWin(str: string): untyped =
   echo "STR[" & str & "]"
   if str == "win":
     echo "YOU WIN!"
-    quit(0)
+    break
   elif str == "die":
     echo "You lose! :("
-    quit(0)
+    break
 
 try:
   var position = parseJson(readLine(s))
